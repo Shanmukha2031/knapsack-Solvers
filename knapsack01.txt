@@ -1,0 +1,10 @@
+9 139
+item1 32 31
+item2 48 29
+item3 46 28
+item4 33 30
+item5 35 21
+item6 45 21
+item7 38 20
+item8 32 28
+item9 42 25

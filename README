@@ -1,0 +1,68 @@
+# Knapsack Problem Solvers
+
+## Description
+This project contains multiple solutions for the classic **0/1 Knapsack problem** using different algorithms:
+- Greedy algorithm (`greedy.cpp`)
+- Dynamic programming (`dynpro.cpp`)
+- Brute-force method (`bruteforce.cpp`)
+- Utility to generate knapsack data (`createkn01.cpp`)
+
+Each solver reads input from a file and outputs the selected items to maximize profit without exceeding the knapsack's capacity.
+
+## Files Overview
+- **`greedy.cpp`**: Implements a greedy approach to solve the knapsack problem.
+- **`dynpro.cpp`**: Uses dynamic programming to solve the knapsack problem optimally.
+- **`bruteforce.cpp`**: Solves the knapsack problem using a brute-force method to check all possible combinations.
+- **`createkn01.cpp`**: Utility to create or modify the knapsack data input file.
+- **`knapsack01.txt`**: A sample input file with items and their profits and weights.
+- **`Makefile`**: A Makefile to easily compile and clean up all the programs.
+
+## How to Use
+
+### Compile the Programs
+A **Makefile** is provided to compile all the programs at once.
+
+## To compile all programs, simply run:
+make
+
+This will compile the following executables:
+greedy
+dynpro
+bruteforce
+createkn01
+
+## Run the Programs
+After compiling, you can run the programs with the input file knapsack01.txt:
+Greedy algorithm:
+./greedy knapsack01.txt
+Dynamic programming:
+./dynpro knapsack01.txt
+Brute-force:
+./bruteforce knapsack01.txt
+## Modify the input file using createkn01:
+createkn01
+
+## To remove all compiled executables, run:
+make clean
+
+## Input File Format
+The input file should have the following format:
+First line: The number of items and the maximum weight capacity of the knapsack.
+Subsequent lines: Each line represents an item, containing its name, profit, and weight.
+Example:
+9 139
+item1 32 31
+item2 48 29
+item3 46 28
+item4 33 30
+item5 35 21
+item6 45 21
+item7 38 20
+item8 32 28
+item9 42 25
+
+Author
+Shanmukha Subrahmanyam Rallapalli
+
+License
+This project is licensed under the MIT License.
